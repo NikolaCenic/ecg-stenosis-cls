@@ -44,8 +44,8 @@ python pretrain.py \
   --test \
   --multilabel \
   --data_path ecg_data/stenosis/data/train_data.pt \
-  --labels_path ecg_data/stenosis/ecg_otis/train_labels.pt \
-  --val_data_path ecg_data/stenosis/ecg_otis/val_data.pt \
-  --val_labels_path ecg_data/stenosis/ecg_otis/val_labels.pt \
-  --test_data_path ecg_data/stenosis/ecg_otis/test_data.pt \
-  --test_labels_path ecg_data/stenosis/ecg_otis/test_labels.pt
+  --labels_path ecg_data/stenosis/data/train_labels.pt \
+  --val_data_path ecg_data/stenosis/data/val_data.pt \
+  --val_labels_path ecg_data/stenosis/data/val_labels.pt \
+  --test_data_path ecg_data/stenosis/data/test_data.pt \
+  --test_labels_path ecg_data/stenosis/data/test_labels.pt
