@@ -43,7 +43,7 @@ python pretrain.py \
   --weighted_loss \
   --test \
   --multilabel \
-  --data_path ecg_data/stenosis/ecg_otis/train_data.pt \
+  --data_path ecg_data/stenosis/data/train_data.pt \
   --labels_path ecg_data/stenosis/ecg_otis/train_labels.pt \
   --val_data_path ecg_data/stenosis/ecg_otis/val_data.pt \
   --val_labels_path ecg_data/stenosis/ecg_otis/val_labels.pt \
