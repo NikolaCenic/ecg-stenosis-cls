@@ -1,0 +1,3 @@
+[submodule "finetune/ecg_founder"]
+	path = finetune/ecg_founder
+	url = https://github.com/PKUDigitalHealth/ECGFounder/tree/master
