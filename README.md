@@ -34,7 +34,8 @@ python pretrain.py \
 ### 2️⃣ Run Fine-tune
   python main.py \
   --seconds 3 \
-  --model {model} \
+  --model {model_type} \
+  --finetune {pretrained_weights} \
   --lr {lr} \
   --backbone_lr {backbone_lr} \
   --epochs {epochs} \
