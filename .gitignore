@@ -1,0 +1,4 @@
+finetune/OTiS/otis_base.pth
+*.pth
+*.pt
+*.ckpt

@@ -1,0 +1,80 @@
+
+batch_size: 
+epochs: 500
+train_num_samples: -1
+val_num_samples: -1
+workers: 32
+seed: 0
+device: cuda:0
+embed_dim: 256
+log_period: 20
+compile: True
+loss:
+  temperature: 0.2
+online_eval:
+  period: 10
+  #ecg:
+  #  lr: 1e-4
+  #  epochs: 5
+
+ecg:
+  seconds: 3
+  model:
+    type: otis # moment
+    size: base # large, huge
+    pretrained: True
+    input_size: 
+    nb_classes: 0
+    patch_size: [1,24]
+    ignore_pos_embed_y: False
+    ecg_pos_emb_offset:
+  optim:
+    warmup_epochs: 5
+    lr: 1e-5
+    wd: 1e-5
+  augmentation:
+    do: True
+    config:
+      noise:
+        p: 0.3
+        noise_level: 0.03
+      amp_scale:
+        p: 0.8
+        scale_range: [0.6, 1.3]
+      time_shift:
+        p: 1
+        shift_max_sec: 1
+      drop:
+        p: 0.5
+        segment_max_sec: 0.3
+        drop_cnt: 5
+angio:
+  multiframe: 
+    frames_per_view: # set dynamically as left+right+1
+    left: 0
+    right: 0
+    spacing_left: 0
+    spacing_right: 0
+  augmentation: base
+  drop_views: [0, 0.3]
+  model:
+    precomputed_embeddings: False # path to precomputed embeddings
+    segments: proximal
+    pretrained: True
+    cls_token_method: p
+  optim: 
+    warmup_epochs: 5
+    lr: 1e-4
+    wd: 1e-5
+clip_mil_training:
+  do_stenosis_training: True
+  stenosis_loss_lambda: 1
+  loss:
+    use_frequency_weights: False
+    cls_lambda: 0.4
+    artery_lambda: 0.4
+    segment_lambda: 0.2
+  
+
+
+
