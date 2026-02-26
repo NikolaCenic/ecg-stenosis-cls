@@ -26,7 +26,7 @@ python pretrain.py \
 ## Fine-tune
 
 ### 1️⃣ Create Environment
-  conda env create -f environment.yml
+  conda env create -f finetune_environment.yml
   conda activate ecg-stenosis-cls
   cd finetune
 

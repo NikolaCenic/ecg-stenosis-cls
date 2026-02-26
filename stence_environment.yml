@@ -276,7 +276,6 @@ dependencies:
       - mdurl==0.1.2
       - ml-dtypes==0.5.1
       - mlstm-kernels==2.0.2
-      - momentfm==0.1.4
       - msgpack==1.1.0
       - multidict==6.4.3
       - mypy==1.10.1
