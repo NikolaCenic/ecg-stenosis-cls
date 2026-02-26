@@ -1,3 +1,12 @@
 [submodule "finetune/ecg_founder"]
 	path = finetune/ecg_founder
-	url = https://github.com/PKUDigitalHealth/ECGFounder/tree/master
+	url = https://github.com/PKUDigitalHealth/ECGFounder.git
+[submodule "finetune/xecg"]
+	path = finetune/xecg
+	url = https://github.com/dlaskalab/bench-xecg.git
+[submodule "finetune/ecgcmr"]
+	path = finetune/ecgcmr
+	url = https://github.com/Alsalivan/ecgcmr.git
+[submodule "finetune/echoing_ecg"]
+	path = finetune/echoing_ecg
+	url = https://github.com/mcintoshML/EchoingECG.git
